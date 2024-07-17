@@ -6,7 +6,7 @@ In this project, I modeled the MyCobot 280 robotic arm within a ROS2 workspace. 
 ![Real Image](https://github.com/maduwanthasl/Model-a-Robotic-Arm-Ros2/blob/main/Images/mycobot%20280.png)
 
 ### Modeled Image
-![Modeled Image]([path_to_modeled_image.png](https://github.com/maduwanthasl/Model-a-Robotic-Arm-Ros2/blob/main/Images/Arm.png))
+![Modeled Image](https://github.com/maduwanthasl/Model-a-Robotic-Arm-Ros2/blob/main/Images/Arm.png)
 
 
 ### Description:
