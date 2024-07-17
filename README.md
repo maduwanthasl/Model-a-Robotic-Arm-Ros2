@@ -136,6 +136,8 @@ source ~/.bashrc
 
 ### 10. Visualize the URDF File in RViz
 
+![opening window](https://github.com/maduwanthasl/Model-a-Robotic-Arm-Ros2/blob/main/Images/opened%20view.png)
+
 To visualize the URDF file in RViz, follow these steps:
 ```bash
 # Install the necessary ROS 2 package for URDF visualization in RViz
