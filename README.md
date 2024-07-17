@@ -111,7 +111,12 @@ cp *.dae *.png ~/ros2_ws/src/mycobot_ros2/mycobot_description/meshes/mycobot_280
 Adjust file names in the mesh files as necessary.
 ### 6. Create mycobot_280_urdf.xacro
 
-Create the XACRO file for the MyCobot 280 robotic arm.
+Navigate to the directory where we create the mycobot_280_urdf.xacro file:
+```bash
+cd ~/ros2_ws/src/mycobot_ros2/mycobot_description/urdf/
+```
+Now, create the mycobot_280_urdf.xacro file using your preferred text editor.
+
 ### 7. Configure CMakeLists.txt
 
 Modify CMakeLists.txt for the mycobot_description package.
