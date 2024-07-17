@@ -36,6 +36,15 @@ A metapackage is used to group together related packages.
 ```bash
 # Create the metapackage
 ros2 pkg create --build-type ament_cmake --license BSD-3-Clause mycobot_ros2
+
+# Navigate into the newly created folder
+cd mycobot_ros2
+
+# Remove default src/ and include/ folders if they exist
+rm -rf src/ include/
+
+# Edit package.xml to describe your package
+gedit package.xml
 ```
 ### Edit package.xml
 
