@@ -37,3 +37,28 @@ A metapackage is used to group together related packages.
 # Create the metapackage
 ros2 pkg create --build-type ament_cmake --license BSD-3-Clause mycobot_ros2
 ```
+### Edit package.xml
+
+Update package.xml to describe your package.
+
+```xml
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>mycobot_ros2</name>
+  <version>0.0.0</version>
+  <description>myCobot series robots by Elephant Robotics (metapackage).</description>
+  <maintainer email="addyourmail@mail.com">destro_username</maintainer>
+  <license>BSD-3-Clause</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <exec_depend>mycobot_description</exec_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
