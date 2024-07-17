@@ -82,7 +82,7 @@ cd ~/ros2_ws
 colcon build
 ```
 
-### 6. Start the URDF File
+### 5. Start the URDF File
 
 Create the URDF file and necessary folders.
 ```bash
@@ -107,3 +107,11 @@ rename 's/joint/link/' *.png
 # Copy mesh files to your ROS 2 workspace
 cp *.dae *.png ~/ros2_ws/src/mycobot_ros2/mycobot_description/meshes/mycobot_280/
 ```
+
+Adjust file names in the mesh files as necessary.
+### 6. Create mycobot_280_urdf.xacro
+
+Create the XACRO file for the MyCobot 280 robotic arm.
+### 7. Configure CMakeLists.txt
+
+Modify CMakeLists.txt for the mycobot_description package.
