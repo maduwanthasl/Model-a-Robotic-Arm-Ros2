@@ -120,3 +120,16 @@ Now, create the mycobot_280_urdf.xacro file using your preferred text editor.
 ### 7. Configure CMakeLists.txt
 
 Modify CMakeLists.txt for the mycobot_description package.
+
+### 8. Build the Package
+
+```bash
+# Navigate to your ROS 2 workspace
+cd ~/ros2_ws
+
+# Build the packages
+colcon build
+
+# Source your setup.bash to set up the environment for the new package
+source ~/.bashrc
+```
