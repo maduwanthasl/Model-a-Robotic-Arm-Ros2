@@ -133,3 +133,20 @@ colcon build
 # Source your setup.bash to set up the environment for the new package
 source ~/.bashrc
 ```
+
+### 10. Visualize the URDF File in RViz
+
+To visualize the URDF file in RViz, follow these steps:
+```bash
+# Install the necessary ROS 2 package for URDF visualization in RViz
+sudo apt-get install ros2-urdf-tutorial
+
+# Launch RViz with your URDF model
+ros2 launch urdf_tutorial display.launch.py model:=/home/destro_username/ros2_ws/src/mycobot_ros2/mycobot_description/urdf/mycobot_280_urdf.xacro
+```
+### 11. Exploring in RViz
+- Axis Convention: By convention, the red axis represents the x-axis, the green axis represents the y-axis, and the blue axis represents the z-axis.
+- Using Joint State Publisher: Utilize the Joint State Publisher GUI to interactively move the robotic arm links.
+- Customizing Display: Experiment with different display options under the "Displays" panel on the left of RViz.
+
+These steps will help you visualize and interact with your MyCobot 280 robotic arm model in RViz within your ROS 2 environment.
