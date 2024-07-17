@@ -46,7 +46,7 @@ rm -rf src/ include/
 # Edit package.xml to describe your package
 gedit package.xml
 ```
-### Edit package.xml
+### 3. Edit package.xml
 
 Update package.xml to describe your package.
 
@@ -71,3 +71,22 @@ Update package.xml to describe your package.
     <build_type>ament_cmake</build_type>
   </export>
 </package>
+```
+
+### 4. Build the Package
+```bash
+# Navigate to your ROS 2 workspace
+cd ~/ros2_ws
+
+# Build the packages
+colcon build
+```
+
+### 6. Start the URDF File
+
+Create the URDF file and necessary folders.
+```bash
+# Create folders for URDF and meshes
+mkdir -p ~/ros2_ws/src/mycobot_ros2/mycobot_description/urdf/
+mkdir -p ~/ros2_ws/src/mycobot_ros2/mycobot_description/meshes/mycobot_280/
+```
