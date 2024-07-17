@@ -90,3 +90,20 @@ Create the URDF file and necessary folders.
 mkdir -p ~/ros2_ws/src/mycobot_ros2/mycobot_description/urdf/
 mkdir -p ~/ros2_ws/src/mycobot_ros2/mycobot_description/meshes/mycobot_280/
 ```
+Download and prepare mesh files for the robotic arm.
+
+```bash
+# Navigate to the directory where mesh files are stored
+cd ~/Downloads/mycobot_ros/mycobot_description/urdf/280_arduino/
+
+# Rename and copy mesh files
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install rename
+
+rename 's/joint/link/' *.dae
+rename 's/joint/link/' *.png
+
+# Copy mesh files to your ROS 2 workspace
+cp *.dae *.png ~/ros2_ws/src/mycobot_ros2/mycobot_description/meshes/mycobot_280/
+```
