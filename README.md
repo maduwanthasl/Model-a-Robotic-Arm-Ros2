@@ -147,7 +147,7 @@ sudo apt-get install ros2-urdf-tutorial
 ros2 launch urdf_tutorial display.launch.py model:=/home/destro_username/ros2_ws/src/mycobot_ros2/mycobot_description/urdf/mycobot_280_urdf.xacro
 ```
 ### 10. Exploring in RViz
-[final outcome.mp4](https://github.com/maduwanthasl/Model-a-Robotic-Arm-Ros2/blob/main/Modeled%20Arm.mp4)
+[final outcome.mp4](https://github.com/user-attachments/assets/3ba04713-eb6e-449e-89c9-06a97c792146)
 - Axis Convention: By convention, the red axis represents the x-axis, the green axis represents the y-axis, and the blue axis represents the z-axis.
 - Using Joint State Publisher: Utilize the Joint State Publisher GUI to interactively move the robotic arm links.
 - Customizing Display: Experiment with different display options under the "Displays" panel on the left of RViz.
@@ -171,4 +171,8 @@ These steps will help you visualize your MyCobot 280 robotic arm model in RViz a
 ## Reference
 
 - This project was based on the tutorial from [Automatic Addison](https://github.com/automaticaddison/mycobot_ros2).
+
+
+
+
 
